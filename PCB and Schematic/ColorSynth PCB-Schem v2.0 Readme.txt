@@ -1,0 +1,42 @@
+ColorSynth Schematic and PCB v2.0 README
+Written 04/025/2014 by Eric Bateman
+eric@colorsynth.com
+
+The ColorSynth v2.0 schematic and PCB were designed in EAGLE, for use with the PIC 16F1827 running firmware v2014-04-25.  You can download this firmware at Sourceforge.net.  
+
+The connectors on the PCB are:
+
+JP1 - Power
+Pin1 - Ground
+Pin2 - n/c
+Pin3 - 12V DC+
+Pin4 - incoming power from MIDI on JP2, connect to other side of the power switch to allow selection between wall/midi power.
+
+JP2 - MIDI IN
+Pin1 - Ground from incoming MIDI power
+Pin2 - DC+ from incoming MIDI power
+Pin3 - MIDI pin 4
+Pin4 - MIDI pin 5
+
+JP3 - MIDI OUT
+Pin1 - Ground for MIDI power transmission
+Pin2 - 12V DC+ for MIDI power transmission
+Pin3 - MIDI pin 4
+Pin4 - MIDI pin 5
+
+JP4 - LED connector (common anode) 
+Pin1 - 8V DC+ from LM7808 vreg1
+Pin2 - Red Cathode
+Pin3 - Green Cathode
+Pin4 - Blue Cathode
+
+JP5 - Knob/Switch header 
+Pin1 - Ground
+Pin2 - 5v DC+
+Pin3 - Switch
+Pin4 - Potentiometer #3
+Pin5 - Potentiometer #2
+Pin6 - Potentiometer #1
+
+
+Please see http://www.midi.org/techspecs/electrispec.php for info on the MIDI electrical specification.

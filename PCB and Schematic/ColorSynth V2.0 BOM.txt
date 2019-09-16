@@ -1,0 +1,39 @@
+ColorSynth PCB/Schematic v2.0 Bill of Materials
+Written 2010-01-03 by Eric Bateman
+eric@colorsynth.com
+
+Most parts should be easily found at Mouser.com
+
+(1) FIXTURE - available as a kit from ColorSynth.com
+
+(1) Common Anode RGB 3W LED, 350mA max per color.  Voltages can be 1v to 5v for any color, the circuit will compensate
+(1) 12V DC power supply, unregulated, 500mA current per ColorSynth
+(2) 5 PIN DIN style connectors for MIDI I/O
+(1) DC power jack
+(1) Power switch (optional).  A selector switch can be used to toggle between external or MIDI power.
+
+(1) Microchip PIC16F1827I/P - IC1
+(1) Sharp PC900V optocoupler - IC2
+(1) LM7808 DC regulator - VREG1
+(1) 78L05 DC regulator - VREG2
+(1) 12MHz crystal - Q1
+(1) 6 position dip switch, right angle - SW1
+
+(1) 1uf ceramic capacitor - C1
+(1) .1uf ceramic capacitor - C2
+(1) .01uf ceramic capacitor - C3
+(2) 22pf ceramic capacitor - C4, C5
+
+(1) 1N4001 protectio diode - D1
+(1) 1N914B diode - D2
+
+(3) 10ohm 1W thru hole resistors - R1, R2, R3
+(1) 3.6k ohm 1/4w thru hole resistor - R4
+(2) 4.7k ohm 1/4w thru hole resistors - R5, R6
+(3) 220 ohm 1/4w thru hole resistors - R7, R9, R10
+(1) 280 ohm 1/4w thru hole resistor - R8
+(6) 10k ohm 1/4w or 1/8w thru hole resistors - R11, R12, R13, R14, R15, R16
+
+(3) BC337 NPN transistors - T1, T2, T3
+
+(5) .100" spaced pin headers, 4pins each except for J5 which needs 6 pins.
