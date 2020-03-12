@@ -2,9 +2,9 @@
 MIDI Controlled Light Synthesizer<br>
 Created by Eric Bateman
 
-![](IMG/Collage.jpg)
-![](IMG/GOL.gif)
-[![DEMO VIDEO](IMG/CSVidPrev.png)](https://www.youtube.com/watch?v=AM1KORBaHBU)
+![](https://github.com/insolace/ColorSynth/raw/master/IMG/Collage.jpg)
+![](https://github.com/insolace/ColorSynth/raw/master/IMG/GOL.gif)
+[![DEMO VIDEO](https://github.com/insolace/ColorSynth/raw/master/IMG/CSVidPrev.png)](https://www.youtube.com/watch?v=AM1KORBaHBU)
 
 
 ColorSynth is a MIDI controlled sculpture and light synthesizer.  
