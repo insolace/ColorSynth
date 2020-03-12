@@ -95,21 +95,21 @@ RxPitchBend 	clrf	StatusFlag ; PitchBend sub goes here
 				return
 
 ;===========================================================================================
-RxDataByte		btfss	ByteCount,0		; 0 = unexpected data byte (running status?)
+RxDataByte			btfss	ByteCount,0		; 0 = unexpected data byte (running status?)
 				goto 	RxRunStat
 				btfss	ByteCount,1		; 0 = This is our last byte
 				goto	ApplyMidi
 				
-RxOneMore		movf	CurrentByte,w
+RxOneMore			movf	CurrentByte,w
 				movwf	MidiData1		; Store data byte
 
-				bcf		ByteCount,1		; ByteCount = b'00000001' = We have one byte left to collect 
+				bcf	ByteCount,1		; ByteCount = b'00000001' = We have one byte left to collect 
 				return
 
-RxRunStat		bsf		ByteCount,0
+RxRunStat			bsf	ByteCount,0
 				goto	RxOneMore
 
-ApplyMidi		movf	CurrentByte,w
+ApplyMidi			movf	CurrentByte,w
 				movwf	MidiData2		; Store data byte
 				
 				clrf	ByteCount		; clear bytecount
@@ -124,16 +124,16 @@ ApplyMidi		movf	CurrentByte,w
 				clrf 	MidiCH
 
 				btfsc	DS4PORT,DS4		; bit 0
-				bsf		MidiCH,0
+				bsf	MidiCH,0
 
 				btfsc	DS3PORT,DS3		; bit 1
-				bsf		MidiCH,1
+				bsf	MidiCH,1
 
 				btfsc	DS2PORT,DS2		; bit 2
-				bsf		MidiCH,2
+				bsf	MidiCH,2
 
 				btfsc	DS1PORT,DS1		; bit 3
-				bsf		MidiCH,3
+				bsf	MidiCH,3
 
 
 CheckCH			; Check our dip switches against our MIDI status byte
